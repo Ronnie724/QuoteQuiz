@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ronnie.quotequiz.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quote Quiz"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Title" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:text="Start a new game"
+        android:id="@+id/NewGameButton"
+        android:onClick="NewGame"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/NewGameButton"
+        android:layout_centerHorizontal="true"
+        android:text="Settings"
+        android:id="@+id/SettingsButton"
+        android:onClick="Settings"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/SettingsButton"
+        android:layout_centerHorizontal="true"
+        android:text="Leaderboard"
+        android:id="@+id/LeaderboardButton"
+        android:onClick="Leaderboard"/>
+</RelativeLayout>

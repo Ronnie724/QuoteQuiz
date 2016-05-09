@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who said it?"
+        android:gravity="left"
+        android:id="@+id/show_mode"
+        android:textSize="50sp"
+        />
+    <TextView
+        android:text="Wait for it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_text"
+        android:textSize="42sp"
+
+        android:layout_below="@+id/show_mode"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        />
+    <TextView
+        android:text="Wait for it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quote_author"
+        android:textSize="42sp"
+
+        android:layout_below="@id/question_text"
+        android:layout_marginTop="155dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="YES"
+
+        android:id="@+id/button_yes"
+        android:layout_below="@id/quote_author"
+        android:layout_alignParentLeft ="true"
+        android:layout_marginLeft="70dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="NO"
+        android:layout_below="@id/quote_author"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+    />
+
+</RelativeLayout>
